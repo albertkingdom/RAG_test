@@ -1,0 +1,27 @@
+
+services:
+  app:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    tty: true
+    stdin_open: true
+    # networks:
+    #   - shared-net
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+  jupyter:
+    image: jupyter/base-notebook:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/jovyan/work
+    tty: true
+    stdin_open: true
+    command: start-notebook.sh --NotebookApp.ip=0.0.0.0 --NotebookApp.token='' --NotebookApp.password=''
+# networks:
+#   shared-net:

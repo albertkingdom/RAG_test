@@ -1,0 +1,5 @@
+langchain_openai
+langchain
+langchain_community
+bs4
+qdrant-client

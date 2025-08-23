@@ -1,0 +1,22 @@
+{
+  "name": "Python Dev (Docker)",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.suggest.enabled": true,
+        "editor.quickSuggestions": {
+          "other": true,
+          "comments": true,
+          "strings": true
+        }
+      },
+      "extensions": [
+        "ms-python.python",
+        "google.geminicodeassist"
+      ]
+    }
+  }
+}
