@@ -41,7 +41,7 @@ BASE_URL="https://litellm-ekkks8gsocw.dgx-coolify.apmic.ai"
 MODEL="gemma-3-12b-it"
 
 # 使用開源model
-# llm = ChatOpenAI(model_name=MODEL, temperature=0, base_url=BASE_URL, api_key=NONE_OPENAI_API_KEY)
+# llm = ChatOpenAI(model_name=MODEL, temperature=0, base_url=BASE_URL, api_key=APMIC_API_KEY)
 
 # 使用OpenAI
 llm = ChatOpenAI(model_name="gpt-4o", temperature=0)
