@@ -1,0 +1,24 @@
+# Python 相關的暫存檔
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+
+# 虛擬環境目錄
+.venv/
+venv/
+env/
+
+# 密鑰和環境變數檔案 (非常重要！)
+.env
+secret.txt
+
+# IDE、編輯器和作業系統產生的檔案
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
