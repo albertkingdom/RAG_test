@@ -3,3 +3,5 @@ langchain
 langchain_community
 bs4
 qdrant-client
+sentence-transformers
+flashrank
